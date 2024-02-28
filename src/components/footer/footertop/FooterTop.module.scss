@@ -1,0 +1,44 @@
+.root {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	&__navItem {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+
+		&:nth-child(1) {
+			align-items: start;
+		}
+		&:nth-child(2) {
+			align-items: center;
+		}
+		&:nth-child(3) {
+			align-items: end;
+		}
+
+		&__strong {
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 24px;
+			letter-spacing: -1.5%;
+			color: #0d0d0d;
+		}
+
+		&__link {
+			text-decoration: none;
+			font-size: 20px;
+			line-height: 23.87px;
+			letter-spacing: -1.5%;
+			color: #0d0d0d;
+		}
+
+		&__title {
+			font-weight: 700;
+			font-size: 50px;
+			line-height: 60px;
+			letter-spacing: -1.5%;
+			color: #0d0d0d;
+		}
+	}
+}
