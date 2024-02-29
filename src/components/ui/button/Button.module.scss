@@ -33,7 +33,7 @@
 		border-color: var(--background-secondary-color);
 	}
 
-	&:active {
+	&:disabled {
 		background-color: var(--inactive-main-color);
 		border-color: var(--inactive-main-color);
 	}
