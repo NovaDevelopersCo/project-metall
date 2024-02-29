@@ -15,7 +15,7 @@
 			left: 0;
 			bottom: -3px;
 			height: 2px;
-			background-color: var(--accent-color);
+			background-color: var(--text-accent-color);
 			width: 100%;
 			border-radius: 0.75rem;
 			transform: scaleX(0);
@@ -23,7 +23,7 @@
 		}
 
 		&:hover {
-			color: var(--accent-color);
+			color: var(--text-accent-color);
 
 			&::after {
 				transform: scaleX(1);
