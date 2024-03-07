@@ -1,2 +1,6 @@
 @import './reset';
 @import './variables';
+
+input[type='search']::-webkit-search-cancel-button {
+	display: none;
+}

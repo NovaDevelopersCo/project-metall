@@ -1,0 +1,37 @@
+.root {
+	position: relative;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	border-bottom: 2px solid #0d0d0d;
+	border-radius: 10px 0 0 10px;
+
+	&__input {
+		z-index: 999;
+		background-color: inherit;
+		padding: 13px 120px 11px 14px;
+		color: #0d0d0d;
+
+		&::placeholder {
+			color: #0d0d0d;
+		}
+	}
+
+	&__searchIcon {
+		right: 10px;
+		position: absolute;
+	}
+
+	&__loadingAnimation {
+		animation: rotate 1s linear infinite;
+
+		@keyframes rotate {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+	}
+}
