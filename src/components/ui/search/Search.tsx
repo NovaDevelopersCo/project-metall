@@ -15,6 +15,7 @@ export const Search = () => {
 	const [debouncedValue, setDebouncedValue] = useState<string>('')
 	const [isLoading, setIsLoading] = useState<boolean>(false)
 
+	// eslint-disable-next-line
 	const updateSearchValue = useCallback(
 		debounce((value: string) => {
 			setDebouncedValue(value)
@@ -55,7 +56,7 @@ export const Search = () => {
 				<Image
 					className={cl.root__searchIcon}
 					src={svg}
-					alt={'search'}
+					alt={'Search'}
 				/>
 			)}
 			{isLoading && (
