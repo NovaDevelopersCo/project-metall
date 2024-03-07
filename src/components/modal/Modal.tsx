@@ -14,25 +14,9 @@ export const Modal = ({
 	active: boolean
 	setActive: Dispatch<SetStateAction<boolean>>
 	children: ReactNode
-	variant: string
+	variant?: string
 }) => {
 	switch (variant) {
-		case 'default':
-			return (
-				<div
-					className={`${cl.root}`}
-					onClick={() => setActive(false)}>
-					<div
-						className={
-							active
-								? `${cl.root__content} ${cl.root__content__activeContent}`
-								: `${cl.root__content}`
-						}
-						onClick={e => e.stopPropagation()}>
-						{children}
-					</div>
-				</div>
-			)
 		case 'form':
 			return (
 				<div
