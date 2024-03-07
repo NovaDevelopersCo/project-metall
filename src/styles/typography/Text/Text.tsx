@@ -1,11 +1,11 @@
 import { classNames } from "@/utils/classNames"
 import styles from './styles.module.scss'
 
-const variantMap = {
+const sizeMap = {
     small_text: styles.root__small_text,
-    p20: styles.root_p20,
-    p30: styles.root__p30,
-    p24: styles.root__p24,
+    '20': styles.root_20,
+    '30': styles.root__30,
+    '24': styles.root__24,
 
 }
 const colorMap = {
@@ -17,19 +17,19 @@ type Tprors = {
     className:string,
     text:string,
     color: 'white'|'black'|'yellow',
-    variant: 'p20'|'p30'|'p24'|'small_text'
+    size: '20'|'30'|'24'|'small_text'
 }
 export const Text = (
     {
         className,
         text,
         color,
-        variant,
+        size,
 
     }:Tprors
 ) => {
     return (
-        <p className={classNames(variantMap[variant],colorMap[color], className ?? '')}>
+        <p className={classNames(sizeMap[size],colorMap[color], className ?? '')}>
                     {text}
         </p>
     )
