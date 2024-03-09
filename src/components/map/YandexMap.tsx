@@ -3,7 +3,7 @@ import { classNames } from '@/utils/classNames'
 import cl from './YandexMap.module.scss'
 
 export const YandexMap = ({ className }: { className?: string }) => {
-	const mapClasses = classNames(`${cl.root}`, className || '')
+	const mapClasses = classNames(cl.root, className ?? '')
 	return (
 		<iframe
 			className={mapClasses}
