@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Dispatch, ReactNode, SetStateAction } from 'react'
+import { ReactNode } from 'react'
 
 import Close from '@/assets/close.svg'
 
@@ -12,7 +12,7 @@ export const Modal = ({
 	variant
 }: {
 	active: boolean
-	setActive: Dispatch<SetStateAction<boolean>>
+	setActive: (a: boolean) => void // eslint-disable-line no-unused-vars
 	children: ReactNode
 	variant?: string
 }) => {
