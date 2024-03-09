@@ -1,3 +1,4 @@
+import { Breadcrumbs } from '@/components/breadcrumbs'
 import { AppProvider } from '@/components/providers'
 import '@/styles/index.scss'
 import { createMetadata } from '@/utils/metadata'
@@ -13,6 +14,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body>
 				<AppProvider>
+					<Breadcrumbs />
 					<main>{children}</main>
 				</AppProvider>
 			</body>

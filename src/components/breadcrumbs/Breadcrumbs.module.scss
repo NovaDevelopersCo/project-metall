@@ -1,0 +1,68 @@
+.root {
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+
+		&__link {
+			position: relative;
+			font-size: 20px;
+			line-height: 24px;
+			letter-spacing: -1.5%;
+			text-transform: capitalize;
+			color: inherit;
+			white-space: nowrap;
+			transition: color 300ms ease-in-out;
+
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 1.5px;
+				background-color: black;
+				width: 100%;
+				border-radius: 0.75rem;
+				transform: scaleX(0);
+				transition: transform 300ms ease-in-out;
+			}
+
+			&:hover {
+				&::after {
+					transform: scaleX(1);
+				}
+			}
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			margin-inline: 20px;
+			width: 22px;
+			height: 1px;
+			background-color: black;
+		}
+
+		&:last-child {
+			color: var(--accent-color);
+
+			& > a {
+				&::after {
+					display: none;
+				}
+
+				&:hover {
+					cursor: default;
+				}
+			}
+
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
