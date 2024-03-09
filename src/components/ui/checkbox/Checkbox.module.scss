@@ -1,0 +1,44 @@
+.root {
+	// background-color: red;
+	display: flex;
+	width: 19px;
+	height: 17px;
+	transition: all 500ms;
+	user-select: none;
+
+	&__checkbox {
+		width: 0;
+		height: 0;
+	}
+
+	&__fakeCheckbox {
+		cursor: pointer;
+		// display: flex;
+		// align-items: center;
+		width: 19px;
+		height: 17px;
+		border-radius: 50%;
+		border: 2px solid var(--accent-color);
+		position: relative;
+
+		&__check {
+			transition: 500ms;
+			transform: scale(0);
+			opacity: 0;
+			top: 1px;
+			left: 1.5px;
+			position: absolute;
+			border-radius: 50%;
+			max-width: 13px;
+			width: 14px;
+			height: 12px;
+			// max-height: 11px;
+			background-color: var(--accent-color);
+
+			&__active {
+				transform: scale(1);
+				opacity: 1;
+			}
+		}
+	}
+}
