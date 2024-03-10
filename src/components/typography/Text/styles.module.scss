@@ -1,0 +1,25 @@
+.root{
+    &__small_text{
+        font-size: 16px
+    }
+    &__p20{
+        font-size: 20px;
+
+    }
+    &__p30{
+        font-size: 30px;
+    }
+
+    &__black{
+        color:black;
+    }
+    &__yellow{
+        color: #F4C024;
+    }
+    &__white{
+        color:white;
+    }
+    &__red {
+        color: #C32A2A;
+    }
+}
