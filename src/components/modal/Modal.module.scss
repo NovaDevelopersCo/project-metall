@@ -1,0 +1,40 @@
+.root {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	opacity: 0;
+	pointer-events: none;
+	transition: 500ms;
+
+	&__active {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	&__content {
+		padding: 40px 35px;
+		background-color: #fff;
+		transform: scale(0.5);
+		transition: 500ms;
+		width: 555px;
+		position: relative;
+		border-radius: 10px;
+
+		&__close {
+			top: 20px;
+			right: 20px;
+			position: absolute;
+			cursor: pointer;
+		}
+
+		&__activeContent {
+			transform: scale(1);
+		}
+	}
+}
