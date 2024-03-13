@@ -1,8 +1,14 @@
-'use client'
-
 import cl from './Checkbox.module.scss'
 
-export const Checkbox = ({ value, filter, active }: { value: string }) => {
+export const Checkbox = ({
+	value,
+	filter,
+	active
+}: {
+	value: string
+	filter: (event: { target: { value: string; checked: boolean } }) => void // eslint-disable-line no-unused-vars
+	active: boolean
+}) => {
 	return (
 		<label className={cl.root}>
 			<input

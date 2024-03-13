@@ -1,19 +1,28 @@
 'use client'
 
-import { useDispatch, useSelector } from 'react-redux'
+import { useState } from 'react'
 
 import { Checkbox } from '@/components/ui/checkbox/Checkbox'
-import { setChecked } from '@/store/slices/filterSlice'
-
-// Поправил название файла
 
 export const HomePage = () => {
-	const dispatch = useDispatch()
-	const active = useSelector(state => state.filter.active)
+	const [check, setChecked] = useState<string[]>([])
+	const [active, setActive] = useState<boolean>(false)
 
-	const handleChange = (value, checked) => {
-		dispatch(setChecked({ value, checked }))
+	const handleChange = (event: {
+		target: { value: string; checked: boolean }
+	}) => {
+		const { value, checked } = event.target
+
+		if (checked) {
+			setChecked(prev => [...prev, value])
+			setActive(true)
+		} else {
+			setChecked(prev => prev.filter(item => item !== value))
+			setActive(check.length === 0)
+		}
 	}
+
+	console.log('фильтры:', check)
 
 	return (
 		<>
