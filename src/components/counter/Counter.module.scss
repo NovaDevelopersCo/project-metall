@@ -7,13 +7,13 @@
 	&__button {
 		min-width: 30px;
 		height: 100%;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 19px;
 		background-color: inherit;
 		border: var(--accent-color) 1px solid;
 		border-radius: 5px;
 		transition: var(--hover-duration);
-		font-size: 16px;
-		font-weight: 600;
-		line-height: 19px;
 
 		&:hover {
 			background-color: var(--accent-color);
@@ -29,8 +29,8 @@
 
 		&_disabled {
 			background-color: var(--inactive-main-color);
-			cursor: default;
 			border-color: var(--inactive-main-color);
+			cursor: default;
 
 			&:hover {
 				background-color: var(--inactive-main-color);
@@ -39,15 +39,14 @@
 	}
 
 	&__value {
-		height: 100%;
 		min-width: 42px;
-		border: var(--accent-color) 1px solid;
+		height: 100%;
 		padding: 5px 11px;
-
-		text-align: center;
-		font-size: 16px;
 		font-weight: 500;
+		font-size: 16px;
 		line-height: 19px;
 		letter-spacing: -1.5%;
+		text-align: center;
+		border: var(--accent-color) 1px solid;
 	}
 }
