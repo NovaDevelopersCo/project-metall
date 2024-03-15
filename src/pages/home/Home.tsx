@@ -1,3 +1,9 @@
+import { Input } from '@/components'
+
 export const HomePage = () => {
-	return <></>
+	return (
+		<>
+			<Input variant="tel" />
+		</>
+	)
 }
