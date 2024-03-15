@@ -1,5 +1,4 @@
 .root {
-	// background-color: red;
 	display: flex;
 	width: 19px;
 	height: 17px;
@@ -13,8 +12,6 @@
 
 	&__fakeCheckbox {
 		cursor: pointer;
-		// display: flex;
-		// align-items: center;
 		width: 19px;
 		height: 17px;
 		border-radius: 50%;
@@ -32,7 +29,6 @@
 			max-width: 13px;
 			width: 14px;
 			height: 12px;
-			// max-height: 11px;
 			background-color: var(--accent-color);
 
 			&__active {
