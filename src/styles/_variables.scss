@@ -1,5 +1,12 @@
 :root {
 	--accent-color: #f4c024;
-	--inactive-main-color: #818181;
-	--hover-duration: 300ms;
+	--neutrall-color: #818181;
+	--white-color: #f6f6f6;
+}
+
+.icon:hover {
+	.icon__path {
+		fill: var(--accent-color);
+		transition: all 100ms;
+	}
 }

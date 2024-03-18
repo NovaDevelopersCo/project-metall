@@ -1,0 +1,16 @@
+.root {
+	display: flex;
+	justify-content: center;
+	background-color: #f6f6f6;
+	width: 100vw;
+	height: 100vh;
+	max-height: 375px;
+	max-width: 1920px;
+
+	&__container {
+		max-width: 1759px;
+		width: 100%;
+		max-height: max-content;
+		margin: 81px 80px 58px 80px;
+	}
+}
