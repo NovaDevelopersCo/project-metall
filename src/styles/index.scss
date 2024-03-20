@@ -1,2 +1,8 @@
 @import './reset';
 @import './variables';
+
+.cont {
+	display: flex;
+	gap: 1px;
+	flex-direction: column;
+}
