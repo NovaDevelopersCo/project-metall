@@ -6,6 +6,7 @@ import styles from './index.module.scss'
 
 const variantMap = {
 	small_text: styles.root__small_text,
+	p18: styles.root__p18,
 	p20: styles.root_p20,
 	p30: styles.root__p30,
 	p24: styles.root__p24
@@ -19,12 +20,12 @@ export const Text = ({
 	className,
 	children,
 	color = 'black',
-	variant = 'p20'
+	variant = 'p20',
 }: {
 	className?: string
 	children: ReactNode
 	color: 'white' | 'black' | 'yellow'
-	variant: 'p20' | 'p30' | 'p24' | 'small_text'
+	variant: 'p18'| 'p20' | 'p30' | 'p24' | 'small_text'
 }) => {
 	return (
 		<p
