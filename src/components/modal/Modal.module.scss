@@ -1,0 +1,37 @@
+.root {
+	position: fixed;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(0 0 0 / 40%);
+	opacity: 0;
+	transition: 500ms;
+	pointer-events: none;
+
+	&__active {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	&__content {
+		position: relative;
+		width: 555px;
+		padding: 40px 35px;
+		background-color: #fff;
+		border-radius: 10px;
+		transform: scale(0.5);
+		transition: 500ms;
+
+		&__close {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			cursor: pointer;
+		}
+
+		&__activeContent {
+			transform: scale(1);
+		}
+	}
+}
