@@ -6,7 +6,8 @@ import styles from './index.module.scss'
 
 const colorMap = {
 	black: styles.root__black,
-	white: styles.root__white
+	white: styles.root__white,
+	yellow: styles.root__yellow
 }
 const variantMap = {
 	h1: styles.root__h1,
@@ -22,7 +23,7 @@ export const Title = ({
 }: {
 	className?: string
 	variant: 'h1' | 'h2' | 'h3' | 'title'
-	color: 'black' | 'white'
+	color: 'black' | 'white' | 'yellow'
 	children: ReactNode
 }) => {
 	{

@@ -1,10 +1,10 @@
 import Image from 'next/image'
 
 import document from '@/assets/icons/document.svg'
+import { Text } from '@/components/ui/typography/Text'
 import { classNames } from '@/utils/classNames'
 
 import cl from './Button.module.scss'
-import { Text } from '@/components/typography/Text'
 
 type ButtonProps = {
 	text: string
@@ -12,6 +12,8 @@ type ButtonProps = {
 	width?: number
 	height?: number
 	variant?: 'primary' | 'outline'
+	textColor: 'white' | 'black' | 'yellow'
+	textVariant: 'p20' | 'p30' | 'p24' | 'small_text'
 }
 
 export const Button = ({
@@ -19,7 +21,9 @@ export const Button = ({
 	icon,
 	variant = 'primary',
 	width = 221,
-	height = 55
+	height = 55,
+	textColor,
+	textVariant
 }: ButtonProps) => {
 	return (
 		<button
@@ -34,7 +38,12 @@ export const Button = ({
 					src={document}
 				/>
 			)}
-			<Text className={cl.root__text}>{text}</Text>
+			<Text
+				color={textColor}
+				className={cl.root__text}
+				variant={textVariant}>
+				{text}
+			</Text>
 		</button>
 	)
 }

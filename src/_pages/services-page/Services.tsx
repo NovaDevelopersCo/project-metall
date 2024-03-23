@@ -1,6 +1,6 @@
-import { Container } from '@/components/container'
 import { ServiceList } from '@/components/services'
-import { Typography } from '@/components/typography'
+import { Container } from '@/components/ui/container'
+import { Typography } from '@/components/ui/typography'
 
 const { Title } = Typography
 
