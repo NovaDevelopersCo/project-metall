@@ -1,0 +1,53 @@
+.root {
+	position: relative;
+	margin-top: 100px;
+	padding: 40px;
+	column-gap: 80px;
+	background: #fff;
+	box-shadow: 0 0 83px 8px rgb(158 158 158 / 20%);
+	box-shadow: 0 0 83px 8px rgb(158 158 158 / 20%);
+	box-shadow: 0 0 83px 8px rgb(158 158 158 / 20%);
+
+	&::before {
+		position: absolute;
+		top: -25%;
+		z-index: -5;
+		width: 210px;
+		color: transparent;
+		font-weight: 700;
+		font-size: 162px;
+		font-style: italic;
+		background: linear-gradient(
+			161.03deg,
+			#ffd761 -2.36%,
+			#ffe084 33.33%,
+			rgb(255 255 255 / 0%) 139.96%
+		);
+		background-clip: text;
+		background-clip: text;
+		content: attr(data-count);
+	}
+
+	&_left {
+		&::before {
+			left: 60px;
+		}
+	}
+
+	&_right {
+		&::before {
+			right: 60px;
+		}
+	}
+
+	&__top {
+		display: flex;
+		margin-bottom: 28px;
+
+		&__body {
+			&__title {
+				margin-bottom: 28px;
+			}
+		}
+	}
+}
