@@ -1,30 +1,37 @@
-.root{
-    &__small_text{
-        font-size: 16px
-    }
+.root {
+	&__small_text {
+		font-size: 16px;
+	}
 
-    &__p20{
-        font-size: 20px;
+	&__p20 {
+		font-size: 20px;
+	}
 
-    }
+	&__p30 {
+		font-size: 30px;
+	}
 
-    &__p30{
-        font-size: 30px;
-    }
+	&__p24 {
+		font-size: 24px;
+	}
 
-    &__black{
-        color:black;
-    }
+	&__l26 {
+		line-height: 26px;
+	}
 
-    &__yellow{
-        color: #F4C024;
-    }
+	&__black {
+		color: black;
+	}
 
-    &__white{
-        color:white;
-    }
+	&__yellow {
+		color: #f4c024;
+	}
 
-    &__red {
-        color: #C32A2A;
-    }
+	&__white {
+		color: white;
+	}
+
+	&__red {
+		color: #c32a2a;
+	}
 }
