@@ -4,6 +4,7 @@ import document from '@/assets/icons/document.svg'
 import { classNames } from '@/utils/classNames'
 
 import cl from './Button.module.scss'
+import { Text } from '@/components/typography/Text'
 
 type ButtonProps = {
 	text: string
@@ -33,7 +34,7 @@ export const Button = ({
 					src={document}
 				/>
 			)}
-			<span className={cl.root__text}>{text}</span>
+			<Text className={cl.root__text}>{text}</Text>
 		</button>
 	)
 }

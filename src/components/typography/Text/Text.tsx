@@ -23,8 +23,8 @@ export const Text = ({
 }: {
 	className?: string
 	children: ReactNode
-	color: 'white' | 'black' | 'yellow'
-	variant: 'p20' | 'p30' | 'p24' | 'small_text'
+	color?: 'white' | 'black' | 'yellow'
+	variant?: 'p20' | 'p30' | 'p24' | 'small_text'
 }) => {
 	return (
 		<p
