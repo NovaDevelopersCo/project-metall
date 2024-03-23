@@ -1,0 +1,35 @@
+.root {
+	&__title {
+		margin-bottom: 52px;
+	}
+
+	&__body {
+		display: flex;
+		margin-left: -100px;
+		column-gap: 38px;
+
+		&__map {
+			height: 490px;
+		}
+
+		&__content {
+			padding-top: 45px;
+
+			&__title {
+				margin-bottom: 62px;
+			}
+
+			&__body {
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 62px;
+				row-gap: 23px;
+			}
+
+			&__buttons {
+				display: flex;
+				column-gap: 20px;
+			}
+		}
+	}
+}

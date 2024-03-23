@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { Typography } from '@/components/typography'
+import { Typography } from '@/components/ui/typography'
 import { classNames } from '@/utils/classNames'
 
 import type { TServiceItem } from '../types'

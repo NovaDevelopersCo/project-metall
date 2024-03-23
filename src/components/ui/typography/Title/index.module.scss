@@ -26,4 +26,8 @@
 	&__white {
 		color: white;
 	}
+
+	&__yellow {
+		color: var(--text-accent-color);
+	}
 }

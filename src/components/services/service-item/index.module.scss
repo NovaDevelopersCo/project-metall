@@ -5,8 +5,6 @@
 	column-gap: 80px;
 	background: #fff;
 	box-shadow: 0 0 83px 8px rgb(158 158 158 / 20%);
-	box-shadow: 0 0 83px 8px rgb(158 158 158 / 20%);
-	box-shadow: 0 0 83px 8px rgb(158 158 158 / 20%);
 
 	&::before {
 		position: absolute;
@@ -23,7 +21,6 @@
 			#ffe084 33.33%,
 			rgb(255 255 255 / 0%) 139.96%
 		);
-		background-clip: text;
 		background-clip: text;
 		content: attr(data-count);
 	}
