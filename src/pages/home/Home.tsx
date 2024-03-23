@@ -1,3 +1,12 @@
+import { Button } from '@/components/ui/button'
+
 export const HomePage = () => {
-	return <></>
+	return (
+		<>
+			<Button
+				text="test"
+				icon
+			/>
+		</>
+	)
 }
