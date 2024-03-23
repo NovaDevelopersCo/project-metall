@@ -1,0 +1,40 @@
+.root {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 500ms ease-in-out;
+
+	&__text {
+		color: inherit;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 19.4px;
+	}
+}
+
+.primary {
+	background-color: var(--background-accent-color);
+	border-color: var(--background-accent-color);
+}
+
+.outline {
+	background-color: transparent;
+	border-color: #000;
+}
+
+.primary,
+.outline {
+	&:hover {
+		background-color: var(--background-secondary-color);
+		border-color: var(--background-secondary-color);
+	}
+
+	&:disabled {
+		background-color: var(--inactive-main-color);
+		border-color: var(--inactive-main-color);
+	}
+}
