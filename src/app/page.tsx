@@ -1,5 +1,12 @@
-import { HomePage } from '@/_pages/home-page'
+import { Address } from '@/components/address'
+import { Container } from '@/components/ui'
 
 export default function Home() {
-	return <HomePage />
+	return (
+		<>
+			<Container>
+				<Address />
+			</Container>
+		</>
+	)
 }
