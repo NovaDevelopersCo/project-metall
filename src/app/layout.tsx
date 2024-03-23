@@ -5,7 +5,7 @@ import '@/styles/index.scss'
 import { createMetadata } from '@/utils/metadata'
 
 const font = Roboto_Flex({
-	weight: ['600', '700', '900', '300'],
+	weight: ['600', '700', '800', '900', '300'],
 	subsets: ['latin']
 })
 
