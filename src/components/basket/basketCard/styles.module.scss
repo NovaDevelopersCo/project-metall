@@ -1,0 +1,90 @@
+.wrap{
+    display:flex;
+    align-items: center;
+    margin: 50px;
+    
+    .card{
+        display: flex;
+        border: 1px solid red;
+        border-radius: 10px;
+        padding: 18px 30px;
+        margin:0px;
+
+        width: 848px;
+        .first_cont{
+            width: 312px;
+            border: 1px solid red;
+        }
+        .title{
+        font-weight: 700;
+        margin: 0px auto 25px 0;
+     
+         }
+      
+        .img{
+        width: 100px;
+         }
+
+         .first_cont{
+        margin: 5px 20px;
+        }
+        .first{
+        display: flex;
+        font-weight: 700;
+        flex-wrap: nowrap;
+
+        }
+          .under_first_cont{
+             display: flex;
+             flex-wrap: nowrap;
+               gap: 46px;
+
+               .text{
+               }
+               .grey{
+                color: #818181;
+                }
+        }
+    }
+  
+    .seccond{
+        display:flex;
+        margin: 32px 30px;
+        width:302px;
+        .add_quantity{  
+            display: flex;
+            flex-wrap: nowrap;
+            height: 29px;
+            text-align: center;
+            border: 1px solid red;
+            .btwin_but{
+                border: 1px solid #f4c024;
+                align-self: center;
+                padding: 5.5px;
+            }
+            .button_one{
+                width: 29px;
+                border-radius: 10px 0px 0px 10px;
+                border: 1px solid #f4c024;
+                background-color:#FFFFFF;
+
+            }
+            .button_two{
+                width:29px;
+                border-radius: 0px 10px 10px 0px;
+                border: 1px solid #f4c024;
+                background-color: #FFC824;
+            }
+        }
+        .result{
+            display: flex;
+            gap:70px
+        }
+
+        
+    }
+
+
+}
+
+

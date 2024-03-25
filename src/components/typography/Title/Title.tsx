@@ -12,6 +12,7 @@ const variantMap = {
 	h1: styles.root__h1,
 	h2: styles.root__h2,
 	h3: styles.root__h3,
+	h18: styles.root__h18,
 	title: styles.root__title
 }
 export const Title = ({
@@ -21,7 +22,7 @@ export const Title = ({
 	children
 }: {
 	className?: string
-	variant: 'h1' | 'h2' | 'h3' | 'title'
+	variant: 'h1' | 'h2' | 'h3' | 'title'| 'h18'
 	color: 'black' | 'white'
 	children: ReactNode
 }) => {
@@ -70,6 +71,17 @@ export const Title = ({
 						)}>
 						{children}
 					</h4>
+				)
+			case 'h18':
+					return (
+						<h5
+							className={classNames(
+								colorMap[color],
+								variantMap[variant],
+								className ?? ''
+							)}>
+							{children}
+						</h5>
 				)
 		}
 	}
